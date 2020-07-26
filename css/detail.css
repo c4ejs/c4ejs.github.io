@@ -1,0 +1,522 @@
+    body {
+        font-family: 'Montserrat', 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        color: black;
+        font-weight: 400;
+    }
+    
+    .carousel-item {
+        display: none
+    }
+    /* Khi kéo trang header không bị mất đi vẫn hiển thị */
+    
+    .menu_fixed {
+        position: fixed;
+        z-index: 9999 !important;
+        width: 100%;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+        top: 0;
+        background-color: #00c0ff !important;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+    
+    .carousel-inner {
+        margin: auto;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        cursor: pointer;
+        position: absolute;
+        top: 50% !important;
+        width: auto !important;
+        padding: 16px !important;
+        margin-top: -22px !important;
+        color: white !important;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease !important;
+        border-radius: 0 3px 3px 0 !important;
+        user-select: none;
+        display: block !important;
+    }
+    /* Position the "next button" to the right */
+    
+    .carousel-control-next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .carousel-item img {
+        height: 450px;
+        width: 100% !important;
+    }
+    /* Fading animation */
+    
+    .carousel-item {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    /* .main_menu {
+    position: relative !important;
+    background-color: violet;
+} */
+    
+    header {
+        background: none !important;
+    }
+    
+    .tour-banner-title {
+        text-align: left;
+        color: #ffffff;
+        font-size: 32px;
+        width: 100%;
+        margin: 15px 0px;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Montserrat', 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+    .sticker {
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        font-size: 14px;
+        text-align: left;
+        line-height: 21px;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 42px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    
+    .background-description {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 15px 25px;
+        max-height: 160px;
+        z-index: 100;
+    }
+    
+    .list-tour-detail {
+        position: absolute;
+        width: 800px;
+        float: left;
+        background: #ffeddf;
+        margin-bottom: 15px;
+        overflow: hidden;
+        display: inline-block
+    }
+    
+    .tour-detail-header-col {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        border-bottom: 1px solid #333;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    .tour-detail-header-col {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        border-bottom: 1px solid #333;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    @media (min-width: 992px) .col-md-2 {
+        width: 16.66666667%;
+    }
+    
+    @media (min-width: 992px) .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9 {
+        float: left;
+    }
+    
+    .detail-tour-kiritm,
+    .row-description {
+        padding-top: 60px;
+        float: left;
+        width: 100%;
+        text-align: justify;
+    }
+    /* THÔNG TIN TOUR */
+    
+    .detail-row-info {
+        padding-top: 4px;
+        width: 90%;
+        margin: auto;
+        position: relative;
+        display: flex;
+    }
+    
+    .row-info {
+        position: absolute;
+        width: 880px;
+        margin-bottom: 15px;
+        line-height: 26px;
+        font-weight: 600;
+        font-size: 14px;
+        padding-left: 70px;
+        background-color: #A64942;
+        color: #ffffff;
+        display: inline-block;
+    }
+    
+    .text-strong {
+        font-weight: 600;
+        font-size: 14px;
+        padding-right: 15px;
+    }
+    /* phân chia trên giao diện */
+    
+    @media (min-width: 992px) .col-md-9 {
+        width: 75%;
+    }
+    
+    @media (min-width: 992px) .col-md-3 {
+        width: 25%;
+    }
+    
+    .right-detail-tour-box {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 10px;
+        float: left;
+        width: 100%;
+        margin-bottom: 25px;
+        line-height: 24px;
+    }
+    
+    .title {
+        color: #ff891e;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 7px;
+        float: left;
+        width: 100%;
+    }
+    
+    .text {
+        flex: 1;
+        color: #333;
+        font-size: 13px;
+        float: left;
+        line-height: 24px;
+    }
+    
+    .list-rows,
+    .item {
+        padding-left: 8px;
+        float: left;
+        width: 100%;
+    }
+    
+    ul,
+    li {
+        list-style-type: none;
+    }
+    
+    .list-rows,
+    .item>.item-line>i {
+        color: #333;
+        margin-right: 8px;
+        font-size: 16px;
+        float: left;
+        line-height: 24px;
+    }
+    
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .callback-sgt {
+        float: left;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    .btn-callback-sgt {
+        background: #ff891e;
+        border: 0;
+        margin: 0 auto;
+        color: #fff;
+        padding: 5px;
+        border-radius: 3px;
+        line-height: 22px;
+        padding: 5px 15px;
+    }
+    
+    .orange-btn {
+        background: #ff891e;
+        border: 0;
+        margin: 0 auto;
+        color: #fff;
+        border-radius: 3px;
+        line-height: 22px;
+        padding: 5px 15px;
+    }
+    /* .breadcrumbs {
+    padding-top: 20px;
+    padding-left: 50px;
+    display: flex;
+    font-size: 14px;
+} */
+    /* .breadcrumbs div::after {
+    content: '\f105';
+    font-family: FontAwesome;
+    padding: 0 8px;
+}
+
+.breadcrumbs div:last-child:after {
+    content: "";
+    padding: 0px;
+} */
+    /* .row {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-right: 15px;
+    padding-left: 15px;
+} */
+    /* .info {
+    position: fixed;
+    width: auto;
+    padding-top: 20px;
+    margin: 0;
+} */
+    
+    .n3-tour-description,
+    .frame-info {
+        height: auto;
+        background: #f1f1f1;
+        padding: 20px;
+    }
+    
+    .n3-tour-description,
+    .sec1,
+    .sec2,
+    .sec3,
+    .sec4,
+    .sec5 {
+        margin-bottom: 15px;
+        border-bottom: 1px dotted #ccc;
+        padding-bottom: 15px;
+    }
+    
+    .sec5 {
+        border: 0 !important;
+    }
+    /* .f-left {
+    float: left;
+} */
+    
+    .col-lg-1,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-sm-1,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-xs-1,
+    .col-xs-10,
+    .col-xs-11,
+    .col-xs-12,
+    .col-xs-2,
+    .col-xs-3,
+    .col-xs-4,
+    .col-xs-5,
+    .col-xs-6,
+    .col-xs-7,
+    .col-xs-8,
+    .col-xs-9 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    .bg-phone {
+        position: absolute;
+        bottom: -3px;
+        right: 0;
+        width: 100%;
+    }
+    /* Next & previous buttons */
+    /* On smaller screens, decrease text size */
+    
+    @media only screen and (max-width: 300px) {
+        .carousel-control-prev,
+        .carousel-control-next {
+            font-size: 11px
+        }
+    }
+    /* skew image on hover */
+    
+    .isotopeSelector img {
+        -webkit-transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+        -ms-transition: all 0.8s ease-in-out;
+        -o-transition: all 0.8s ease-in-out;
+        transition: all 0.8s ease-in-out;
+    }
+    
+    .isotopeSelector:hover img {
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+        -ms-transition: all 0.8s ease-in-out;
+        -o-transition: all 0.8s ease-in-out;
+        transition: all 0.8s ease-in-out;
+    }
+    
+    .isotopeSelector figure {
+        overflow: hidden;
+    }
+    
+    .isotopeSelector figure {
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    }
+    /* Thông tin chi tiết tour */
+    
+    .nav-tabs {
+        border-bottom: 1px solid #000;
+        display: flex;
+    }
+    
+    .nav-tabs {
+        border-bottom: 1px solid #000;
+        display: flex;
+    }
+    
+    .nav-tabs>li>a {
+        color: #333;
+        font-weight: 600;
+    }
+    
+    .nav-tabs>li>a:hover {
+        color: #ff891e;
+    }
+    
+    .nav-tabs>li.active {
+        border: 1px solid #000;
+        border-bottom-color: transparent;
+        border-radius: 5px;
+    }
+    
+    .nav-tabs>li.active>a {
+        border: 0;
+        color: #ff891e;
+        font-weight: 600;
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .nav-tabs>li {
+            width: 33%;
+            text-align: center;
+        }
+        .nav-tabs>li>a {
+            padding: 13px 5px;
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+    
+    .nav {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
