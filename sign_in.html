@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
@@ -79,12 +80,15 @@
 
 
     <div class="login-page">
+        <div>
+            <p class="message-error"></p>
+        </div>
         <div class="form">
             <form class="register-form">
-                <input type="text" placeholder="Username" class="username-register" required>
-                <input type="password" placeholder="Password" class="pass-register" required>
-                <input type="email" class="email-register" placeholder="Email">
-                <button>Create</button>
+                <input type="text" placeholder="Username" id="username-register">
+                <input type="password" placeholder="Password" id="pass-register">
+                <input type="email" id="email-register" placeholder="Email">
+                <button class="btn-register" id="btnRegister">Create</button>
                 <p class="message">Already Registered? <a href="#">Login</a> </p>
             </form>
 
