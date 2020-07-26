@@ -925,7 +925,7 @@ ul {
 
 .single-blog .tag {
     text-align: left;
-    display: inline-block;
+    display: block;
     float: left;
     font-size: 13px;
     font-weight: 300;
@@ -9466,7 +9466,6 @@ td.day {
     margin: 0 -5px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
