@@ -8089,8 +8089,27 @@ footer {
     margin-bottom: 5px;
 }
 
+.advanced-search {
+    align-items: center;
+    
+    background-color: #00c0ff;
+    width: 320px;
+    margin-left: 300px;
+    height: 60px;
+}
 
+.advanced-search-logo {
+    display: block;
+    width: 40px;
+    height: 31px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.advanced-search-btn {
+    color: white;
+    text-shadow: #fff;
+}
 .note {
     color: #eb004f;
 }
