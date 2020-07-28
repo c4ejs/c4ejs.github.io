@@ -89,6 +89,16 @@ function loginForTravel() {
         if (/^[a-zA-Z0-9- ]*$/.test(usernameLogin) == false) {
             throw new Error('Yêu cầu username không được chứa ký tự đặc biệt');
         }
+
+        //check password
+        if (passLogin == "") {
+            throw new Error('Yêu cầu bắt buộc nhập PASSWORD');
+        }
+        //Check độ mạnh của mật khẩu
+        if (/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(passLogin) == false) {
+            throw new Error('Yêu cầu mật khẩu có tối thiểu 8 ký tự, có ít nhất một chữ cái, một số và một ký tự đặc biệt');
+        }
+        //check thông tin đăng nhập có đúng hay không
         let listUsernameFromListInfoUser = [];
         if (getListInfoUser) {
             for (let getUsername = 0; getUsername < getListInfoUser.length; getUsername++) {
@@ -102,15 +112,6 @@ function loginForTravel() {
         } else {
             throw new Error('Tài khoản của quý khách không tồn tại trên hệ thống')
         }
-        //check password
-        if (passLogin == "") {
-            throw new Error('Yêu cầu bắt buộc nhập PASSWORD');
-        }
-        //Check độ mạnh của mật khẩu
-        if (/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(passLogin) == false) {
-            throw new Error('Yêu cầu mật khẩu có tối thiểu 8 ký tự, có ít nhất một chữ cái, một số và một ký tự đặc biệt');
-        }
-
         //check pass có đúng không
         let infoEnterUserClient = getListInfoUser[listUsernameFromListInfoUser.indexOf(usernameLogin)];
         if (passLogin != infoEnterUserClient.password) {
@@ -119,14 +120,10 @@ function loginForTravel() {
 
     } catch (e) {
         const errorNotifi = document.querySelector('.message-error');
-        if (e) {
-            errorNotifi.textContent = e.message;
-            return;
-        }
+        errorNotifi.textContent = e.message;
+        return;
     }
     alert('Đăng nhập thành công');
-
-
 }
 
 // Tạo sự kiện cho button Register
