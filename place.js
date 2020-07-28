@@ -62,14 +62,14 @@ VN = [
             sld_src: 'bavi',
         },
         {
-            raw: 'Đại Lải',
-            code: 'DL',
+            raw: 'Tam Đảo',
+            code: 'TD',
             A: [2, 3, 4],
             B: [5],
             C: [5],
             D: [1, 2, 3],
             E: [3],
-            sld_src: 'dailai',
+            sld_src: 'tamdao',
         },
         {
             raw: 'Mai Châu',
