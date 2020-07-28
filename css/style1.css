@@ -925,7 +925,7 @@ ul {
 
 .single-blog .tag {
     text-align: left;
-    display: block;
+    display: inline-block;
     float: left;
     font-size: 13px;
     font-weight: 300;
@@ -3206,8 +3206,7 @@ ul {
 /* line 20, /Applications/MAMP/htdocs/palash/cl/july 2019/189 travel/189 travel html/sass/_search.scss */
 
 .search_your_country .search_form {
-    
-    background-image: url("../img/paper.gif");
+    background-color: #ffcc00;
     padding: 80px 95px;
     margin-bottom: 50px;
     color: #fff;
@@ -8090,22 +8089,6 @@ footer {
     margin-bottom: 5px;
 }
 
-.advanced-search {
-    align-items: center;
-    
-    background-color: #00c0ff;
-    width: 320px;
-    margin-left: 300px;
-    height: 60px;
-}
-
-.advanced-search-logo {
-    display: block;
-    width: 40px;
-    height: 31px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .note {
     color: #eb004f;
@@ -9097,7 +9080,6 @@ td.day {
     display: none;
 }
 
-
 #goingay {
     display: none;
 }
@@ -9463,6 +9445,7 @@ td.day {
     margin: 0 -5px;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
@@ -9531,6 +9514,8 @@ td.day {
     flex: 0 0 50%;
     margin-bottom: 20px;
 }
+
+
 
 .col-news:nth-of-type(2n) {
     padding-left: 5px;
@@ -10151,18 +10136,4 @@ td.day {
     margin-bottom: 15px;
     font-size: 19px;
     color: #0c427a;
-}
-
-
-/* Thành thêm code */
-
-.btn-register {
-    border-radius: 10px;
-    width: 70% !important;
-}
-
-.message-error {
-    color: #fff;
-    margin: auto;
-    text-align: center;
 }

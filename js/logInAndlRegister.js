@@ -17,6 +17,14 @@ function validateInfoUi() {
     if (/^[a-zA-Z0-9- ]*$/.test(usernameRegis) == false) {
         throw new Error('Yêu cầu username không được chứa ký tự đặc biệt');
     }
+    if (getListInfoUser) {
+        for (let inforUserName = 0; inforUserName < getListInfoUser.length; inforUserName++) {
+            if (usernameRegis == getListInfoUser[inforUserName].username) {
+                throw new Error('Tên đăng nhập đã tồn tại trên hệ thống');
+            }
+        }
+    }
+
 
     //check password
     if (passwordRegis == "") {
@@ -38,55 +46,87 @@ function saveAndValidateInforRegis() {
     } catch (e) {
 
         const errorNotifi = document.querySelector('.message-error');
-        if (e) {
-            errorNotifi.textContent = e.message;
-        }
-    } finally {
-        let idUser;
-        if (getListInfoUser) {
-            getListInfoUser.push({
-                idUser: (getListInfoUser.length + 1),
-                username: usernameRegis,
-                password: passwordRegis,
-                email: emailRegis,
-            });
-            const listUser = JSON.stringify(getListInfoUser);
-            localStorage.setItem("List User Register", listUser);
-        } else {
-            dataRegister.push({
-                idUser: 1,
-                username: usernameRegis,
-                password: passwordRegis,
-                email: emailRegis,
-            });
-            const listUser = JSON.stringify(dataRegister);
-            localStorage.setItem("List User Register", listUser);
-        }
-        alert("Tạo tài khoản thành công. Thực hiện đăng nhập để được trải nghiệm dịch vụ tốt hơn");
-        location.reload();
-
+        errorNotifi.textContent = e.message;
+        return;
     }
+    let idUser;
+    if (getListInfoUser) {
+        getListInfoUser.push({
+            idUser: (getListInfoUser.length + 1),
+            username: usernameRegis,
+            password: passwordRegis,
+            email: emailRegis,
+        });
+        const listUser = JSON.stringify(getListInfoUser);
+        localStorage.setItem("List User Register", listUser);
+    } else {
+        dataRegister.push({
+            idUser: 1,
+            username: usernameRegis,
+            password: passwordRegis,
+            email: emailRegis,
+        });
+        const listUser = JSON.stringify(dataRegister);
+        localStorage.setItem("List User Register", listUser);
+    }
+    alert("Tạo tài khoản thành công. Bạn vui lòng đăng nhập để trải nghiệm dịch vụ tốt hơn.");
+    location.reload();
 
 }
 
 
 function loginForTravel() {
     try {
-        validateInfoUi();
-        // const getListUser = JSON.parse(localStorage.getItem("List User Register"));
+        const usernameLogin = document.querySelector('.username-login').value;
+        const passLogin = document.querySelector('.password-login').value;
+        if (usernameLogin == "") {
+            throw new Error('Yêu cầu bắt buộc nhập USERNAME');
+        }
+        if (usernameLogin.length < 8) {
+            throw new Error('Yêu cầu độ dài username phải >= 8 ký tự');
+        }
+        //Check ký tự đặc biệt
+        if (/^[a-zA-Z0-9- ]*$/.test(usernameLogin) == false) {
+            throw new Error('Yêu cầu username không được chứa ký tự đặc biệt');
+        }
+        let listUsernameFromListInfoUser = [];
+        if (getListInfoUser) {
+            for (let getUsername = 0; getUsername < getListInfoUser.length; getUsername++) {
+                listUsernameFromListInfoUser.push(getListInfoUser[getUsername].username);
+            }
+            //Check user name tồn tại trên hệ thống
+            if (typeof getListInfoUser[listUsernameFromListInfoUser.indexOf(usernameLogin)] == "undefined") {
+                throw new Error("Tài khoản quý khách nhập không chính xác")
+            }
 
-        // for (let getInfoUserFromArr = 0; getInfoUserFromArr < getListUser.length; getInfoUserFromArr++) {
+        } else {
+            throw new Error('Tài khoản của quý khách không tồn tại trên hệ thống')
+        }
+        //check password
+        if (passLogin == "") {
+            throw new Error('Yêu cầu bắt buộc nhập PASSWORD');
+        }
+        //Check độ mạnh của mật khẩu
+        if (/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(passLogin) == false) {
+            throw new Error('Yêu cầu mật khẩu có tối thiểu 8 ký tự, có ít nhất một chữ cái, một số và một ký tự đặc biệt');
+        }
 
-        // }
+        //check pass có đúng không
+        let infoEnterUserClient = getListInfoUser[listUsernameFromListInfoUser.indexOf(usernameLogin)];
+        if (passLogin != infoEnterUserClient.password) {
+            throw new Error('Mật khẩu quý khách nhập không chính xác');
+        }
+
     } catch (e) {
         const errorNotifi = document.querySelector('.message-error');
         if (e) {
             errorNotifi.textContent = e.message;
+            return;
         }
-    } finally {
-
-
     }
+    alert('Đăng nhập thành công');
+
+
 }
 
 // Tạo sự kiện cho button Register
