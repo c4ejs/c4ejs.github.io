@@ -10148,8 +10148,7 @@ td.day {
 }
 
 .message-error {
-    background-color: #fff;
-    color: red;
-    position: absolute;
+    color: #fff;
     margin: auto;
+    text-align: center;
 }
