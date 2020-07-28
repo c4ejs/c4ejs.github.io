@@ -41,50 +41,34 @@
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="menu_icon"><i class="fas fa-bars"></i></span>
-                                </button>
+                            <span class="menu_icon"><i class="fas fa-bars"></i></span>
+                        </button>
 
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
+                                    <a class="nav-link" href="index.html">Trang Chủ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about.html">about</a>
+                                    <a class="nav-link" href="about.html">Giới thiệu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="packages.html">packages</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Blog
-                                            </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="blog.html"> blog</a>
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                pages
-                                            </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                        <a class="dropdown-item" href="elements.html">Elements</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link" href="contact.html">Liên hệ</a>
                                 </li>
                             </ul>
                         </div>
-                        <a class="btn_1 d-none d-lg-block" href="sign_in.html">Sign in</a>
+                        <a class="btn_1 d-none d-lg-block" href="sign_in.html">Đăng nhập</a>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
     <!-- Header part end-->
-
+    <!-- <audio controls class="box follow-scroll" autoplay loop = "true">
+        <source src="mus/My Heart Will Go On - Celine Dion.mp3" type="audio/mpeg">
+        <source src="mus/Payphone - Maroon 5.mp3" type="audio/mpeg">
+        <source src="mus/Everglow - Coldplay.mp3" type="audio/mpeg">    
+    </audio> -->
     <!-- source dẫn  -->
 
     <!-- <div class="breadcrumbs clearfix">
@@ -108,16 +92,16 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/detail-tourist/image-1.jpg" class="d-block w-100" alt="Image-1">
+                <img src="img/detail-tourist/maichau/1.jpg" class="d-block w-100" alt="Image-1" id="sld-img1">
             </div>
             <div class="carousel-item">
-                <img src="img/detail-tourist/image-2.jpg" class="d-block w-100" alt="Image-2">
+                <img src="img/detail-tourist/maichau/2.jpg" class="d-block w-100" alt="Image-2" id="sld-img2">
             </div>
             <div class="carousel-item">
-                <img src="img/detail-tourist/image-3.jpg" class="d-block w-100" alt="Image-3">
+                <img src="img/detail-tourist/maichau/3.jpg" class="d-block w-100" alt="Image-3" id="sld-img3">
             </div>
             <div class="carousel-item">
-                <img src="img/detail-tourist/image-4.jpg" class="d-block w-100" alt="Image-4">
+                <img src="img/detail-tourist/maichau/4.jpg" class="d-block w-100" alt="Image-4" id="sld-img4">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" onclick="changeImg(0)">
@@ -132,9 +116,9 @@
     <section>
         <div class="container" style="position: relative">
             <div class="background-description">
-                <h1 class="tour-banner-title">Tour Trong Nước</h1>
-                <div class="sticker">
-                    Tour Trong Nước
+                <h1 class="tour-banner-title" id="tour-banner-tittle">Mai Châu</h1>
+                <div class="sticker" id="sticker">
+                    Hòa Bình
                 </div>
             </div>
         </div>
@@ -144,258 +128,48 @@
             <div class="row-info">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                        <span class="text-uppercase">Thời gian:</span>
-                        <span class="text-strong">3 ngày 2 đêm</span>
+                        <span class="text-uppercase" id="suggest">Thời gian gợi ý:</span>
+                        <span class="text-strong" id="suggestdate">3 ngày 2 đêm</span>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <span class="text-uppercase">Phương tiện:</span>
-                        <span class="text-strong">Hàng không Vietnam Airlines</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <span class="text-uppercase">Điểm xuất phát:</span>
-                        <span class="text-strong">TP. Hồ Chí Minh </span>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <span class="text-uppercase">Điểm đến:</span>
-                        <span class="text-strong">Quy Nhơn</span>
-                    </div>
+
                 </div>
             </div>
-            <!-- <div class="list-tour-detail">
-                <div class="row ">
-                    <div class="col-md-12 col-xs-12 tour-detail-title-information tour-detail-header-col">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-3 col-xs-12">
-                                Khởi hành
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-12">
-                                Mã Tour
-                            </div>
-                            <div class="col-sm-2 col-xs-12">
-                                Giá
-                            </div>
-                            <div class="col-sm-2 col-xs-12">
-                                Giá trẻ em
-                            </div>
-                            <div class="col-sm-2 col-xs-12">
-                                Giá em bé
-                            </div>
-                            <div class="col-md-2 col-sm-12 col-xs-12">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12 tour-detail-content-col">
-                        <div class="list-inline">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-3 col-xs-12">
-                                    <strong>26/07/2020</strong>
-                                </div>
-                                <div class="col-md-2 col-sm-3 col-xs-12">
-                                    <strong style="margin-left: -30px;">STN084-2020-02537</strong>
-                                </div>
-                                <div class="col-md-2 col-sm-2 col-xs-12 price">ư
-                                    <strong>4.079.000</strong>
-                                </div>
-                                <div class="col-md-2 col-sm-2 col-xs-12 price">
-                                    <strong>2.960.000</strong>
-                                </div>
-                                <div class="col-md-2 col-sm-2 col-xs-12 price">
-                                    <strong>1.656.000</strong>
-                                </div>
-                                <div class="col-md-2 col-sm-12 col-xs-12 packageInfo">
-                                    <label>Đặt/Mua tour</label>
-                                    <div class="action-book">
-                                        <a class="btn btn-buy-tour" href="/booking/book-tour/pax-no/20091?type=buy">
-                                                        Mua Online
-                                                    </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-2 col-sm-3 col-xs-12">
-                                    <strong>02/08/2020</strong>
-                                </div>
-                                <div class="col-md-2 col-sm-3 col-xs-12">
-                                    <strong style="margin-left: -30px;">STN084-2020-02540</strong>
-                                </div>
-                                <div class="col-md-2 col-sm-2 col-xs-12 price">
-                                    <strong>4.379.000</strong>
-                                </div>
-                                <div class="col-md-2 col-sm-2 col-xs-12 price">
-                                    <strong>3.260.000</strong>
-                                </div>
-                                <div class="col-md-2 col-sm-2 col-xs-12 price">
-                                    <strong>1.917.000</strong>
-                                </div>
-                                <div class="col-md-2 col-sm-12 col-xs-12 packageInfo">
-                                    <label>Đặt/Mua tour</label>
-                                    <div class="action-book">
-                                        <a class="btn btn-buy-tour" href="/booking/book-tour/pax-no/20092?type=buy">
-                                                        Mua Online
-                                                    </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <div class="row-description">
-                <div class="title-description">Tour này có gì hay</div>
-                <div class="content-description">- Thưởng thức “À Ố Show” – vở diễn độc đáo với hình thức xiếc kể chuyện, sử dụng toàn bộ đạo cụ chính là tre kết hợp với âm nhạc để mang đến những bức tranh hóm hỉnh mà đầy tinh tế từ làng quê yên bình đến phố thị nhộn nhịp đậm nét đời
-                    thường của người dân Việt Nam - Dạo bước trên Cầu Vàng tọa lạc tại Vườn Thiên Thai. - Tham quan và mua sắm tại chợ Hàn (hoặc chợ Cồn)</div>
-                <a target="_blank" class="orange-btn" style="margin-bottom: 20px; display: inline-block" href="/in-tour/3868/dulich-da-nang-hoi-an-kdl-ba-na-cau-vang">In chương trình tour <i class="fa fa-print"></i></a>
+            <div class="row-description" id="des1" data-aos="fade-down">
+                <p>Bạn là một người thích khám phá bạn muốn chinh phục mọi nẻo đường của Tổ quốc Việt Nam xinh đẹp? Hay đơn giản bạn muốn trở về một cuộc sống yên bình giản dị của vùng núi TâyBắc? Tôi sẽ bật mí cho bạn muốn đến điểm không thể không suy nghĩ,
+                    đó là Mai Châu, vùng đất mà ai bước tới khó có thể quên.
+                    <br>Cách thủ đô Hà Nội 150km về phía tây, Mai Châu thuộc tỉnh Hòa Bình, phía tây giáp Sơn La, phía nam giáp Thanh Hóa, phía bắc giáp huyện Đà Bắc, phía Đông giáp huyện Tân Lạc. Để đến nơi đây có nhiều con đường, nếu đi từ Hà Nội đi
+                    lên theo quốc lộ 6, từ Thanh Hóa đi theo quốc lộ 15, dọc đường nếu không nhớ bạn có thể hỏi mọi người, ai cũng biết tới Mai Châu.
+                    <br>Trong lịch sử, Mai Châu vốn là một trong năm châu của phủ Chợ Bờ khi thành lập tỉnh Mường, vào ngày 15 tháng 1 năm 1957 chính thức trở thành đơn vị hành chính cấp huyện độc lập.Việt Nam có 54 dân tộc anh em thì Mai Châu có 5 gồm
+                    Thái, Mường, Dao, Mông, Kinh và Thái chiếm đa số nhiều nhất. Các dân tộc cùng chung sống rất hòa thuận, đoàn kết giúp đỡ lẫn nhau trong cuộc sống và lòng hiếu khách là điều đáng tự hào nhất.
+                    <br>Nếu có dịp theo quốc lộ 6 bạn sẽ được trải nghiệm những đường đèo ngoạn mục của đèo Thung Khe, khi tới cột cờ Mai Châu thì hãy dừng chân lại, không thì rất tiếc cho bạn đó.Từ cột cờ, toàn cảnh Thị trấn Mai Châu hiện ra trước mắt
+                    bạn, đẹp khó cưỡng lại được vì thế tôi chắc chắn chụp ảnh sẽ rất lý tưởng, đừng bỏ qua cơ hội này, hãy thoải mái tự sướng với khung cảnh đằng sau, bạn của bạn sẽ rất ghen tị đó.
+                    <br>Mai Châu có 22 xã và 1 thị trấn, để thăm thú được khắp huyện bạn sẽ phải dành nhiều thời gian, nhưng hãy yên tâm mỗi phút mỗi giây trôi đi sẽ không lãng phí với bạn đâu, tôi dám chắc sau đợt này sẽ có một kỉ niệm cho bạn.
+                </p>
+                <img src="img/detail-tourist/Maichau/5.jpg" alt="Hình ảnh Mai Châu 1" class="dis_img" id="img1">
+                <p class="img-des" id="img_des1">Một góc của Mai Châu Nguồn: Phạm Đức Huy</p>
+                <br>
+                <p>Là du khách nước ngoài hoặc trong nước muốn đi theo đoàn cho không khí hơn mà muốn có nhu cầu đi tour. Bạn biết dịch vụ Homestay chứ? Đó chính là ở cùng với gia chủ hiện đang rất phát triển tại các bản du lịch cộng đồng như bản Lác, bản
+                    Poom Cọng, bản Văn, bản Bước,... Bản Lác được coi là khu du lịch nổi tiếng nhất Mai Châu, có tuổi đời lâu năm chủ yếu là người Thái sinh sống với nghề trồng lúa và dệt thổ cẩm là chính. Bản có hàng chục nhà nghỉ Homestay rộng rãi thoáng
+                    mát đơn sơ, có đủ chăn, đệm gối để cho bạn có một giấc ngủ ngon sau chuyến hành trình dài dưới mái nhà sàn độc đáo. Nhà sàn đã có từ xa xưa, đó là một nét đẹp của Thái vẫn còn được lưu giữ đến ngày nay. Nhà có hình mai rùa được dựng
+                    lên tiếng cột gỗ chắc chắn cao cách mặt đất tầm 2 đến 3 mét để tránh lũ lụt và thời xưa để tránh thú dữ. Nhà sàn đơn sơ thế thôi nhưng vẫn không kém sự long trọng và khang trang.Tại bản sẽ không có hiện tượng chèo kéo khách hàng, nâng
+                    giá cao, mọi thứ đều sẽ được kiểm soát rĩ ràng. Khi buổi chiều đến hãy đi bộ cùng ai đó hay thuê xe đạp với giá rẻ hoặc thuê chiếc xe điện có thể chở được 8 9 người, vòng quanh trong bản, đi dạo đâu đó khu vực lân cận, hít thở không
+                    khí trong lành của đồng quê, bạn sẽ có cảm giác rất tuyệt vời đó. Để cho rực rỡ thêm, hãy thuê những bộ quần áo dân tộc tại đây với giá khá rẻ giao động từ 15 đến 20 nghìn đồng là bạn có thể mặc trên người những bộ áo Thái, Mông. Tự
+                    tin khoe với bạn bè những bức ảnh đẹp nhất. Vào mỗi tối thứ 7 tại sân bãi của bản sẽ diễn ra đốt lửa trại, múa xòe với nhau, cùng ngắm các chàng trai cô gái dân tộc múa dưới ánh lửa lung linh huyền ảo, hòa nhịp nắm tay nhau nối vòng
+                    tay lớn.
+                    <br>Mai Châu ngoài phong cảnh thì một thứ không thể không nhắc tới đó là ẩm thực. Các món ăn rất đa dạng , phong phú, mang hương vị đặc trưng của núi rừng Tây Bắc, hòa quyện vào vị thơm nồng ngất ngây của men rượu Mai Hạ. Bạn đã từng
+                    đọc thơ Tây Tiến của Quang Dũng, trong đó có câu "Mai Châu mùa em thơm nếp xôi". Xôi nếp được làm từ nếp nương ngon dẻo, hương vị thơm ngát và rất nhanh no. Ngoài ra còn có các món như cơm lam, lợn bản nướng,măng luộc, rượu cần, thịt
+                    gà xào măng chua,... Mỗi món ăn đều lấy nguyên liệu có sẵn, mùi vị khác hoàn toàn so với nhiều nơi, chắc chắn sẽ đem đến sự hài lòng cho bạn ăn một lần sẽ muốn ăn lần hai.Chúng tôi luôn chào đón tất cả các bạn dù bạn là ai. Bạn đến
+                    mùa xuân, chúng tôi chào đón bằng sắc xuân của hoa và núi rừng với các lễ hội rộn ràng. Bạn đến mùa hè, chúng tôi chào đón với những tia nắng ấm áp cùng ánh trăng đêm khuya huyền diệu. Bạn đến mùa thu, chúng tôi chào đón bằng những
+                    cơn gió mát dịu mùi hương lúa vàng hoe chín rộ. Bạn đến mùa đông, chúng tôi chào đón bằng sự ấm áp của những ngọn lửa trại được thắp lên trong vòng tay đoàn kết của mọi dân tộc anh em.
+                </p>
+                <img src="img/detail-tourist/Maichau/6.jpg" alt="xoinep" class="dis_img" id="img2">
+                <p class="img-des" id="img_des2">Món xôi nếp, đặc sản của Mai Châu Nguồn: Nhật Minh</p>
+
+                <p>
+                    <br>Sẽ còn nhiều điều cần bạn khám phá và tận hưởng, hãy đến với chúng tôi, vùng đất Mai Châu tươi đẹp luôn chào đón bạn.
+                </p>
             </div>
-            <div class="row row-image-box isdesktop">
-                <div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector " style="margin-bottom: 25px">
-                    <img width="100%" height="65.9%" alt="image tour" src="img/detail-tourist/tải xuống.jpg">
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector " style="margin-bottom: 25px">
-                    <img width="100%" height="65.9%" alt="image tour" src="img/detail-tourist/image-6.jpg">
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector " style="margin-bottom: 25px">
-                    <img width="100%" height="65.9%" alt="image tour" src="img/detail-tourist/image-7.jpg">
-                </div>
-
-            </div>
-            <div class="row-info-tour">
-                <div role="tabpanel" class="">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#tour-program" role="tab" data-toggle="tab">
-    Chương trình Tour
-</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#tour-term" role="tab" data-toggle="tab">
-    Chính sách Tour
-</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#tour-question" role="tab" data-toggle="tab">
-    Câu hỏi thường gặp
-</a>
-                        </li>
-                    </ul>
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="tour-program">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="commonInfo">
-                                        <p></p>
-                                        <p style="text-align: justify;"><strong>NGÀY&nbsp;01: TP. HỒ CHÍ MINH – ĐÀ NẴNG – HỘI AN – TẶNG SHOW À Ố&nbsp;(Ăn trưa, chiều)</strong><br> Buổi sáng, quý khách tập trung tại Cổng D1, Ga đi trong nước, sân bay Tân Sơn Nhất. Hướng dẫn viên của
-                                            Lữ hành&nbsp;Saigontourist đón quý khách, hỗ trợ làm thủ tục. Khởi hành ra Đà Nẵng trên chuyến bay<strong> VN112 lúc 08:00</strong>. Đến Đà Nẵng, tham quan <strong>bán đảo Sơn Trà</strong>, ngắm <strong>cảng Tiên Sa</strong>,
-                                            viếng <strong>chùa Linh Ứng Bãi Bụt</strong> - ngôi chùa lớn nhất ở thành phố Đà Nẵng, chiêm bái <strong>tượng Phật Quan Thế Âm cao nhất Việt Nam.</strong> Buổi chiều, khởi hành vào <strong>Hội An. </strong>Tham
-                                            quan <strong>Ngũ Hành Sơn và làng nghề điêu khắc đá Hòa Hải. Tiếp tục đến Phố cổ Hội An với các công trình tiêu biểu: Chùa Cầu Nhật Bản, chùa Ông, hội quán Phúc Kiến, khu phố&nbsp;đèn lồng.</strong> Đoàn thưởng
-                                            thức <strong>“À Ố Show” </strong>– vở diễn độc đáo với hình thức xiếc kể chuyện, sử dụng toàn bộ đạo cụ chính là tre kết hợp với âm nhạc để mang đến những bức tranh hóm hỉnh mà đầy tinh tế từ làng quê yên bình
-                                            đến phố thị nhộn nhịp đậm nét đời thường của người dân Việt Nam. Sau khi xem show đoàn quay về Đà Nẵng. Nghỉ đêm tại Đà Nẵng.<br>
-                                            <strong>Lưu ý: Trong trường hợp vì lý do không đủ khách để thực hiện À Ố Show , Quý khách sẽ được Saigontourist bố trí tham quan Công viên Ấn tượng Hội An, và xem show “Ký Ức Hội An”.</strong></p>
-
-                                        <p style="text-align: center;"><img alt="" src="https://saigontourist.net/uploads/destination/TrongNuoc/DaNang/linh-ung-Temple-in-Ba-Na-Hills-Mountain-Resort_719248030.jpg" style="width: 100%;"><br>
-                                            <strong>Chùa Linh Ứng Bãi Bụt</strong></p>
-
-                                        <p><strong>NGÀY&nbsp;02: ĐÀ NẴNG – KDL BÀ NÀ (CẦU VÀNG)&nbsp;(Ăn sáng, chiều)</strong><br> Sau bữa sáng, quý khách sẽ được&nbsp;tự do&nbsp;tham quan hoàn toàn. Lữ hành Saigontourist xin phép&nbsp;gợi ý 2 chương trình
-                                            để&nbsp;quý khách tham khảo:<br>
-                                            <strong>-&nbsp;Lựa chọn 1 (Tự túc ăn trưa) Tự do để khám phá TP.Đà Nẵng.</strong> Quý khách có thể ra sông Hàn ngắm <strong>cầu Rồng</strong> - một trong những con rồng thép lớn nhất thế giới, <strong>cầu Trần Thị Lý </strong>-
-                                            với kiến trúc tựa con thuyền căng buồm vươn ra biển lớn, tượng<strong> Cá chép hóa rồng -</strong> một biểu tượng mang đậm tính nghệ thuật và tín ngưỡng dân gian, <strong>cầu Tình Yêu</strong> - cây cầu trái
-                                            tim với những ổ khóa dễ thương trên thành cầu rất thú vị và lãng mạn. Hoặc đến <strong>chợ Hàn (hoặc chợ Cồn),</strong> mua sắm đặc sản địa phương. Quý khách tự túc ăn trưa, trải nghiệm phong vị ẩm thực độc
-                                            đáo của Đà Nẵng.<br>
-                                            <strong>-&nbsp;Lựa chọn 2 (Tham quan &amp; Ăn trưa buffet tại Bà Nà Hills)</strong>: Xe đưa quý khách đến Ga cáp treo của <strong>KDL Bà Nà Hills</strong>. Lên Bà Nà bằng cáp treo, ngắm toàn cảnh núi non hùng
-                                            vỹ và tận hưởng khí hậu trong lành. Dạo bước trên <strong>Cầu Vàng </strong>tọa lạc tại Vườn Thiên Thai, với thiết kế độc đáo và ấn tượng, đầy mềm mại tựa một dải lụa, được nâng đỡ bởi đôi bàn tay khổng lồ loang
-                                            lổ rêu phong giữa cảnh sắc nên thơ tuyệt diệu của Bà Nà – Núi Chúa. Viếng <strong>chùa Linh Ứng, khám phá Fantasy Park - khu vui chơi giải trí trong nhà đẳng cấp quốc tế (miễn phí 105 trò chơi) và trò chơi Hiệp sĩ Thần thoại (Máng trượt). </strong>Dạo
-                                            bộ giữa <strong>Khu làng Pháp </strong>một không gian kiến trúc tái hiện sinh động nước Pháp thời cận đại đầy lãng mạn, sang trọng và lịch lãm. Trải nghiệm <strong>Tàu hỏa leo núi, tham quan 9 vườn hoa, Hầm rượu cổ Debay (không bao gồm thưởng thức rượu vang) .</strong>Tự
-                                            túc chi phí khám phá <strong>Khu trưng bày tượng sáp </strong>- duy nhất tại Việt Nam. Tự túc chi phí <strong>Tàu hoả leo núi số 2 </strong>(qua Lâu Đài). Xe đưa quý khách về lại TP.Đà Nẵng.<br> Nghỉ đêm tại
-                                            Đà Nẵng.</p>
-
-                                        <p style="text-align: center;"><img alt="" src="https://saigontourist.net/uploads/destination/TrongNuoc/DaNang/Ba-Na-Hills_717342793.jpg" style="width: 100%;"><br>
-                                            <strong>Bà Nà Hills</strong></p>
-
-                                        <p style="text-align: justify;"><strong>NGÀY&nbsp;03: ĐÀ NẴNG – TP HCM&nbsp;(Ăn sáng, trưa)</strong><br> Buổi sáng, đoàn tự do nghỉ ngơi. Sau khi làm thủ tục trả phòng, xe đưa Quý khách đi tham quan<strong> biển Mỹ Khê </strong>– một trong những
-                                            bãi biển quyến rũ nhất hành tinh. Đoàn tham quan &amp; mua sắm tại<strong> chợ Hàn (hoặc chợ Cồn). </strong>Ra sân bay Đà Nẵng, trở về TP.HCM trên chuyến bay <strong>VN139 lúc 19:00. </strong>Kết thúc chương
-                                            trình. Quý khách tự túc phương tiện từ sân bay Tân Sơn Nhất&nbsp;về nhà.</p>
-
-                                        <p style="text-align: center;"><img alt="" src="https://saigontourist.net/uploads/destination/TrongNuoc/DaNang/Han-market-da-nang_626958068.jpg" style="width: 100%;"><br>
-                                            <strong>Chợ Hàn</strong></p>
-
-                                        <p style="text-align: justify;"><strong>Ghi chú:</strong><br> - Điểm tham quan có thể sắp xếp lại cho phù hợp mà vẫn bảo đảm đầy đủ nội dung của từng chương trình<br> - Giờ bay có thể bị thay đổi bởi Vietnam Airlines<br> - Để thực hiện đúng quy
-                                            định của Chính Phủ. Quý khách vui lòng khai báo y tế và thực hiện các biện pháp phòng chống dịch trong suốt chuyến đi<br>
-                                            <strong>-&nbsp;Giá tour&nbsp;áp dụng cho các khách mang quốc tịch Việt Nam hoặc khách có tên Việt Nam toàn bộ</strong></p>
-
-                                        <p style="text-align: center;"><strong><img alt="" src="https://saigontourist.net/uploads/gallery/vna-kichcau.jpg" style="width: 90%;"></strong></p>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="tour-term">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="commonInfo">
-                                        <p>
-                                        </p>
-                                        <p><strong>PHỤ THU LỰA CHỌN 2 (</strong><b>Tham quan &amp; ăn trưa buffet tại Bà Nà Hills</b><strong>):<br>
-                                            1/ Mua TRƯỚC ngày khởi hành : +&nbsp;840.000 đồng/người lớn (chiều cao từ 1m4 trở lên); + 640.000 đồng/ trẻ em (chiều cao từ 1m - dưới 1m4).<br>
-                                            2/ Mua NGAY hoặc SAU ngày khởi hành hoặc TRONG GIAI ĐOẠN ĐI TOUR, áp dụng theo giá công bố của Bà Nà&nbsp;</strong></p>
-
-                                        <p><strong>* Vé trẻ em</strong><br> -&nbsp;Trẻ em dưới 2 tuổi: <strong>thu 330.000đ/ trẻ </strong>. Phụ huynh tự lo cho bé ăn ngủ<br> -&nbsp;Trẻ em từ 2 đến dưới 6 tuổi: mua 90% giá vé máy bay người lớn. Phụ huynh
-                                            tự lo cho bé ăn ngủ, tự trả phí tham quan (nếu có).<br> -&nbsp;Hai người lớn chỉ được kèm một trẻ em dưới 6 tuổi. Từ trẻ thứ 2 trở lên, mỗi em phải chịu mức giá <strong>tương đương trẻ em từ 6 đến 11 tuổi</strong><br>                                            -&nbsp;Trẻ em từ 6 đến 11 tuổi: tiêu chuẩn gồm vé máy bay, ăn uống và tham quan theo chương trình, ngủ chung giường với phụ huynh<br>
-                                            <strong>-&nbsp;Trẻ em trên 11 tuổi: áp dụng giá và các tiêu chuẩn dịch vụ như người lớn</strong></p>
-
-                                        <p><strong>* Giá tour bao gồm:&nbsp;&nbsp;</strong><br> -&nbsp;Chi phí xe máy lạnh phục vụ theo chương trình.<br> -&nbsp;Vé máy bay khứ hồi<br> -&nbsp;Chi phí khách sạn theo tiêu chuẩn (2 khách/phòng). Lẻ khách ngủ
-                                            giường phụ&nbsp;hoặc<strong>&nbsp;chịu chi phí phụ thu phòng đơn: +&nbsp; 580.000 đ/khách/tour&nbsp;</strong><br> -&nbsp;Chi phí ăn – uống theo chương trình.<br> -&nbsp;Chi phí tham quan và tàu thuyền.<br> -&nbsp;Chi
-                                            phí Hướng dẫn viên tiếng Việt.<br>
-                                            <strong>-&nbsp;Quà tặng: Nón, nước suối, khăn lạnh, viết</strong><b><i>, </i>vé xem À Ố Show (hàng ghế </b><b>Aah!)</b></p>
-
-                                        <p><strong>* Giá tour không bao gồm:&nbsp;&nbsp;</strong><br> -&nbsp;Chi phí tham quan - ăn uống ngoài chương trình, tắm biển (thuê dù ghế, tắm nước ngọt), giặt ủi, điện thoại và các chi phí cá nhân khác<br> -&nbsp;Tham
-                                            quan tại Bà Nà Hills (Lựa chọn 2)<br> -&nbsp;Chi phí tham gia các trò chơi gắp thú bông, trò chơi kỹ năng carnival và các trò chơi có thưởng tại khu Fantasy Park, tham quan Khu trưng bày tượng sáp tại Bà Nà
-                                            Hills, vé tàu hoả leo núi số 2 (qua Lâu Đài)<br> -
-                                            <strong> Chi phí phụ thu phòng đơn: + 580.000 đ/khách/tour .</strong></p>
-
-                                        <p><strong>THÔNG TIN HƯỚNG DẪN</strong><br>
-                                            <strong>* Quy định vé máy bay: Đây là chương trình hợp tác với hãng hàng không Vietnam Airlines nên có một số lưu ý:</strong><br> -&nbsp;Giá vé máy bay không bao gồm&nbsp;suất ăn/uống trên máy bay<br> -&nbsp;Không
-                                            được hoàn hoặc hủy vé máy bay. Nếu hủy, vui lòng chịu phạt 100% chi phí vé máy bay<br> -&nbsp;Khi đăng ký vé máy bay, quý khách cung cấp họ và tên, ngày tháng năm sinh (đúng từng ký tự ghi trong hộ chiếu
-                                            hoặc Chứng minh nhân dân)<br> -&nbsp;Không được thay đổi thông tin đặt chỗ: họ tên hành khách, chuyến bay, ngày bay, chặng bay, tách đoàn, gia hạn vé<br>
-                                            <strong>-&nbsp;Số lượng khách tối thiểu để tổ chức tour: 10 khách/đoàn</strong><br> -&nbsp;Trường hợp hủy tour do sự cố khách quan như thiên tai, dịch bệnh hoặc do máy bay hoãn - hủy chuyến, Lữ hành Saigontourist
-                                            sẽ không chịu trách nhiệm bồi thường thêm bất kỳ chi phí nào khác ngoài việc hoàn trả chi phí những dịch vụ chưa được sử dụng của tour đó (ngoại trừ chi phí vé máy bay)<br> -&nbsp;Du khách mang theo hành lý
-                                            gọn nhẹ và phải tự bảo quản hành lý, tiền bạc, tư trang trong suốt thời gian đi du lịch.</p>
-
-                                        <p><strong>* Trường hợp hủy vé landtour, quý khách vui lòng thanh toán các khoản sau:</strong><br> -&nbsp;Quý khách chuyển đổi tour sang ngày khác và báo trước ngày khởi hành trước 7 ngày sẽ không chịu phí (không áp
-                                            dụng các tour KS 4-5 sao). Nếu trễ hơn sẽ căn cứ theo qui định hủy phạt bên dưới và chỉ được chuyển ngày khởi hành 1 lần.<br> -&nbsp;Hủy vé trong vòng 24 giờ hoặc ngay ngày khởi hành, chịu phạt 90% tiền tour.<br>                                            -&nbsp;Hủy vé trước ngày khởi hành từ 2 - 4 ngày, chịu phạt 50% tiền tour.<br> -&nbsp;Hủy vé trước ngày khởi hành từ 5 - 7 ngày, chịu phạt 30% tiền tour.<br> -&nbsp;Hủy vé trước ngày khởi hành từ 8 ngày trở
-                                            lên, chịu phạt 10% tiền tour.<br> -&nbsp;Sau khi hủy tour, du khách vui lòng đến nhận tiền trong vòng 15 ngày kể từ ngày kết thúc tour. Chúng tôi chỉ thanh toán trong khỏang thời gian nói trên.</p>
-
-                                        <p><strong>* Hành lý và giấy tờ tùy thân:&nbsp;&nbsp;</strong><br> -&nbsp;Du khách mang theo giấy Chứng minh nhân dân (còn thời hạn 15 năm) hoặc Hộ chiếu (còn thời hạn sử dụng). Đối với du khách là Việt kiều, Quốc
-                                            tế nhập cảnh Việt Nam bằng visa rời, vui lòng mang theo visa khi đăng ký và khi đi tour.<br> -&nbsp;Khách lớn tuổi (từ 70 tuổi trở lên), khách tàn tật tham gia tour, phải có thân nhân đi kèm và cam kết đảm bảo
-                                            đủ sức khỏe khi tham gia tour du lịch.<br> -&nbsp;Trẻ em dưới 14 tuổi khi đi tour phải mang theo giấy khai sinh hoặc hộ chiếu. Trẻ em từ 14 tuổi trở lên phải mang theo giấy Chứng minh nhân dân.<br>
-                                            <strong>-&nbsp;Tất cả giấy tờ tùy thân mang theo đều phải bản chính</strong><br> -&nbsp;Du khách mang theo hành lý gọn nhẹ và phải tự bảo quản hành lý, tiền bạc, tư trang trong suốt thời gian đi du lịch.<br>                                            -&nbsp;Du khách được miễn cước 1 KIỆN HÀNH LÝ KÝ GỞI (23kg) và 1 KIỆN HÀNH LÝ XÁCH TAY (10kg)<br> -&nbsp;Khách Việt Nam ở cùng phòng với khách Quốc tế&nbsp; hoặc Việt kiều yêu cầu phải có giấy hôn thú.<br>
-                                            <strong>-&nbsp;Quý khách có mặt tại sân bay trước 2 tiếng so với giờ khởi hành.</strong></p>
-
-                                        <p><strong>* Ghi chú khác:</strong><br> -&nbsp;Công ty xuất hóa đơn cho du khách có nhu cầu (Trong thời hạn 7 ngày sau khi kết thúc chương trình du lịch). Du khách được chọn một trong những chương trình khuyến mãi
-                                            dành cho khách lẻ định kỳ (Nếu có).<br>
-                                            <strong>-&nbsp;Quý khách có mặt tại điểm đón trước 15 phút. Trong trường hợp đến trễ khi xe đã khởi hành; Không làm thủ tục đúng giờ (khi hãng hàng không đã đóng quầy, kết thúc chấp nhận hành khách); Không lên máy bay trước giờ đóng cửa lên máy bay, hoặc hủy tour không báo trước vui lòng chịu phí như ‘hủy vé ngay ngày khởi hành’</strong></p>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="tour-question">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="commonInfo">
-                                        <p>
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        </div>
         </div>
         <div class="col-md-3 col-sm-12 col-xs-12">
             <div class="row">
@@ -404,15 +178,15 @@
                         <div class="title">Hỗ trợ khách hàng</div>
                         <ul class="list-rows">
                             <li class="item">
-                                <a class="item-line" href="tel:1900 1808">
+                                <a class="item-line" href="tel:0777392035">
                                     <i class="fa fa-phone"></i>
-                                    <span class="text">Hotline: 1900 1808</span>
+                                    <span class="text">Hotline Tourbi: 0 777 392 035</span>
                                 </a>
                             </li>
                             <li class="item">
-                                <a class="item-line" href="mailto:thanh.le.ktmm@gmail.com">
+                                <a class="item-line" href="mailto:minhnnguyen003@gmail.com">
                                     <i class="fa fa-envelope"></i>
-                                    <span class="text">Email: thanh.le.ktmm@gmail.com</span>
+                                    <span class="text">Email: minhnnguyen003@gmail.com</span>
                                 </a>
                             </li>
                         </ul>
@@ -423,32 +197,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-sm-4 col-xs-12">
-                    <div class="right-detail-tour-box">
-                        <div class="title">Vì sao nên mua tour online?</div>
-
-                        <ul class="list-rows">
-                            <li class="item"><a class="item-line" href="#"><span class="text">An toàn - Bảo mật</span> </a></li>
-                            <li class="item"><a class="item-line" href="#"><span class="text">Tiện lợi, tiết kiệm thời gian</span> </a></li>
-                            <li class="item"><a class="item-line" href="#"><span class="text">Không tính phí giao dịch</span> </a></li>
-                            <li class="item"><a class="item-line" href="#"><span class="text">Giao dịch bảo đảm</span> </a></li>
-                            <li class="item"><a class="item-line" href="#"><span class="text">Nhận thêm ưu đãi</span> </a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-12 col-sm-4 col-xs-12">
-                    <div class="right-detail-tour-box">
-                        <div class="title">Thương hiệu uy tín</div>
-
-                        <ul class="list-rows">
-                            <li class="item"><a class="item-line" href="#"><span class="text">Thành lập từ năm 1975</span> </a></li>
-                            <li class="item"><a class="item-line" href="#"><span class="text">Thương hiệu lữ hành hàng đầu</span> </a></li>
-                            <li class="item"><a class="item-line" href="#"><span class="text">Thương hiệu quốc gia</span> </a></li>
-                        </ul>
-                    </div>
-                </div>
-
                 <p class="item" style="text-align: center;">&nbsp;</p>
             </div>
         </div>
