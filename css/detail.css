@@ -52,7 +52,7 @@
     }
     
     .carousel-item img {
-        height: 450px;
+        height: 703.33px;
         width: 100% !important;
     }
     /* Fading animation */
@@ -196,27 +196,36 @@
     }
     /* THÔNG TIN TOUR */
     
+
     .detail-row-info {
         padding-top: 4px;
         width: 90%;
         margin: auto;
-        position: relative;
+        position: re;
         display: flex;
     }
     
     .row-info {
         position: absolute;
-        width: 880px;
+        width: 700px;
         margin-bottom: 15px;
         line-height: 26px;
         font-weight: 600;
         font-size: 14px;
-        padding-left: 70px;
+        padding-left: 25px;
         background-color: #A64942;
         color: #ffffff;
         display: inline-block;
     }
     
+    .dis_img {
+        width: 75%;
+        height: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
     .text-strong {
         font-weight: 600;
         font-size: 14px;
@@ -242,6 +251,14 @@
         line-height: 24px;
     }
     
+
+    .img-des {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    
     .title {
         color: #ff891e;
         font-weight: 600;
@@ -257,6 +274,15 @@
         font-size: 13px;
         float: left;
         line-height: 24px;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    .follow-scroll {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
     }
     
     .list-rows,
