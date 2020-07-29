@@ -125,7 +125,7 @@ var loginForTravel = function() {
         return;
     }
     localStorage.setItem('curentUser', JSON.stringify(usernameLogin))
-    window.location.href = '/index.html';
+    window.location.href = 'index.html';
 
 }
 

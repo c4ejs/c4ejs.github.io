@@ -16,6 +16,6 @@ if (localStorage.getItem('curentUser')) {
 
 function logout() {
     localStorage.removeItem("curentUser");
-    window.location.href = '/index.html';
+    window.location.href = 'index.html';
 }
 document.querySelector('.logout').addEventListener('click', logout);
