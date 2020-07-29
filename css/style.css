@@ -3257,7 +3257,7 @@ ul {
 /* line 49, /Applications/MAMP/htdocs/palash/cl/july 2019/189 travel/189 travel html/sass/_search.scss */
 
 .search_your_country .search_form .search_form_iner .custom_select {
-    width: 50%;
+    width: 100%;
     border: 0px solid transparent;
     border-radius: 0;
     color: #c3c3c3;
@@ -3267,7 +3267,10 @@ ul {
     text-transform: capitalize;
 }
 
-
+input {
+    vertical-align:center;
+    font-size: 26px;
+}
 /* line 58, /Applications/MAMP/htdocs/palash/cl/july 2019/189 travel/189 travel html/sass/_search.scss */
 
 .search_your_country .search_form .search_form_iner .custom_select:before {
