@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- font awesome CSS -->
     <link rel="stylesheet" href="css/all.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- flaticon CSS -->
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -151,50 +153,6 @@
     </section>
     <!-- banner part start-->
 
-    <!-- feature_part start-->
-    <section class="feature_part padding_top">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-7">
-                    <div class="feature_img">
-                        <img src="img/about_img.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="feature_part_text">
-                        <img src="img/section_tittle_img.png" alt="#">
-                        <h2>Amazing tour</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
-                            ut</span>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-4">
-                                <div class="feature_part_text_iner">
-                                    <img src="img/icon/tour_icon_1.png" alt="">
-                                    <h4>london</h4>
-                                    <p>35 Places</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="feature_part_text_iner">
-                                    <img src="img/icon/tour_icon_2.png" alt="">
-                                    <h4>Kashmir</h4>
-                                    <p>75 Places</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="feature_part_text_iner">
-                                    <img src="img/icon/tour_icon_3.png" alt="">
-                                    <h4>chaina</h4>
-                                    <p>85 Places</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <img src="img/animate_icon/Shape-1.png" alt="" class="feature_icon_1">
         <img src="img/animate_icon/Shape-2.png" alt="" class="feature_icon_2">
         <img src="img/animate_icon/Shape-3.png" alt="" class="feature_icon_3">
@@ -214,7 +172,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6" data-aos="flip-left">
                     <div class="single_popular_place">
                         <img src="img/detail-tourist/Maichau/4.jpg" alt="">
                         <h4>Mai Châu</h4>
@@ -222,7 +180,7 @@
                         <a href="detail-tourist.html" class="btn1">read more</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6" data-aos="flip-left">
                     <div class="single_popular_place">
                         <img src="img/icon/place_icon_2.png" alt="">
                         <h4>Biking in Norway</h4>
@@ -230,7 +188,7 @@
                         <a href="#" class="btn1">read more</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6" data-aos="flip-left">
                     <div class="single_popular_place">
                         <img src="img/icon/place_icon_3.png" alt="">
                         <h4>Tour of iceland</h4>
@@ -561,6 +519,9 @@
     </footer>
     <!--::footer_part end::-->
 
+    <script>
+        AOS.init();
+    </script>
     <!-- jquery plugins here-->
     <!-- jquery -->
     <script src="js/jquery-1.12.1.min.js"></script>
@@ -584,6 +545,8 @@
     <script src="js/mail-script.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- my js -->
     <script src="js/index.js"></script>
 </body>
