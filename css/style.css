@@ -3283,9 +3283,7 @@ input {
     background-color: #c3c3c3;
 }
 
-.aaaaaaaaaaaaaaaaaaaaaaaaa {
-    
-}
+
 
 /* line 68, /Applications/MAMP/htdocs/palash/cl/july 2019/189 travel/189 travel html/sass/_search.scss */
 
@@ -3310,6 +3308,7 @@ input {
 
 .search_your_country .search_form .search_form_iner .custom_select .list {
     width: 100%;
+    
 }
 
 
