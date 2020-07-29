@@ -1,9 +1,78 @@
 .heading-banner {
     background-color: #f2f2f2;
-    position: absolute;
+    position: inherit;
     margin-top: auto;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 130px;
     /* page-break-after: auto; */
     padding-left: 25px;
+    background-image: url("../img/tour_plan_1.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 110%;
+    height: 380px;
+}
+
+.text-banner {
+    float: left;
+    margin-top: auto;
+    margin-right: 700px;
+    
+}
+
+.minh {
+    display: block;
+    float: right;
+    /* width: 50%;
+    height: 50%; */
+}
+
+.optionblock {
+    width: 20%;
+    display: inline-block;
+    margin-right: 0;
+    float: none;
+    padding: 0 12px;
+    vertical-align: top;
+    position: inherit;
+}
+
+.opt {
+    vertical-align: middle;
+}
+
+.quest_zone {
+    padding-top: 40px;
+    max-width: calc(1600px + 10%);
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.quest {
+    width: 100%;
+}
+
+fieldset {
+    margin-top: inherit;
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border: 0;
+}
+
+.leg {
+    padding-top: 25px;
+    padding-bottom: 2px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 34px;
 }
