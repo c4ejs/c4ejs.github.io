@@ -188,3 +188,30 @@ VN = [
     ]
     
 ]
+
+const quest = [
+    {
+        raw: 'A',
+        code: 'whom',
+        que : " Bạn đi bao nhiêu người",
+        ans : ['Một Mình', 'Cặp đôi', 'Gia Đình', 'Bạn bè', 'Tất cả'],
+    },
+    {
+        raw: 'C',
+        code: 'gender',
+        que: "Bạn là?",
+        ans: ['Nam', 'Nữ', 'Không muốn trả lời'],
+    },
+    {
+        raw: 'D',
+        code: 'long',
+        que : "Bạn có bao nhiêu thời gian cho chuyến du lịch",
+        ans : ['Trong ngày', '1-2 đêm', '2-5 đêm', '>5 đêm', 'Tất cả'],
+    },
+    {
+        raw: 'E',
+        code: 'place',
+        que : 'Bạn thích đi vùng nào?',
+        ans: ['Bãi Biển', 'Rừng Núi', 'Sông Hồ', 'Thành Phố', 'Tất cả'],
+    }
+]

@@ -3268,7 +3268,7 @@ ul {
 }
 
 input {
-    vertical-align:center;
+    vertical-align: middle;
     font-size: 26px;
 }
 /* line 58, /Applications/MAMP/htdocs/palash/cl/july 2019/189 travel/189 travel html/sass/_search.scss */
@@ -3308,7 +3308,7 @@ input {
 
 .search_your_country .search_form .search_form_iner .custom_select .list {
     width: 100%;
-    
+
 }
 
 

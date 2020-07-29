@@ -27,6 +27,20 @@
     height: 50%; */
 }
 
+.optionblock {
+    width: 20%;
+    display: inline-block;
+    margin-right: 0;
+    float: none;
+    padding: 0 12px;
+    vertical-align: top;
+    position: inherit;
+}
+
+.opt {
+    vertical-align: middle;
+}
+
 .quest_zone {
     padding-top: 40px;
     max-width: calc(1600px + 10%);
