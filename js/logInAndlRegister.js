@@ -70,15 +70,17 @@ function saveAndValidateInforRegis() {
         localStorage.setItem("List User Register", listUser);
     }
     alert("Tạo tài khoản thành công. Bạn vui lòng đăng nhập để trải nghiệm dịch vụ tốt hơn.");
-    location.reload();
+    window.location.reload();
 
 }
 
 
-function loginForTravel() {
+var loginForTravel = function() {
+    const usernameLogin = document.querySelector('.username-login').value;
+    const passLogin = document.querySelector('.password-login').value;
+    let listUsernameFromListInfoUser = [];
     try {
-        const usernameLogin = document.querySelector('.username-login').value;
-        const passLogin = document.querySelector('.password-login').value;
+
         if (usernameLogin == "") {
             throw new Error('Yêu cầu bắt buộc nhập USERNAME');
         }
@@ -99,7 +101,7 @@ function loginForTravel() {
             throw new Error('Yêu cầu mật khẩu có tối thiểu 8 ký tự, có ít nhất một chữ cái, một số và một ký tự đặc biệt');
         }
         //check thông tin đăng nhập có đúng hay không
-        let listUsernameFromListInfoUser = [];
+
         if (getListInfoUser) {
             for (let getUsername = 0; getUsername < getListInfoUser.length; getUsername++) {
                 listUsernameFromListInfoUser.push(getListInfoUser[getUsername].username);
@@ -117,14 +119,16 @@ function loginForTravel() {
         if (passLogin != infoEnterUserClient.password) {
             throw new Error('Mật khẩu quý khách nhập không chính xác');
         }
-
     } catch (e) {
         const errorNotifi = document.querySelector('.message-error');
         errorNotifi.textContent = e.message;
         return;
     }
-    alert('Đăng nhập thành công');
+    localStorage.setItem('curentUser', JSON.stringify(usernameLogin))
+    window.location.href = '/index.html';
+
 }
+
 
 // Tạo sự kiện cho button Register
 document.querySelector('#btnRegister').addEventListener("click", saveAndValidateInforRegis);
