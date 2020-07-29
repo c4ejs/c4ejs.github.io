@@ -30,6 +30,7 @@
 </head>
 
 <body>
+    
     <!--::header part start::-->
     <header class="main_menu home_menu">
         <div class="container">
@@ -123,7 +124,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
-                    <div class="single_donation_item">
+                    <div class="single_donation_item" data-aos="flip-left">
                         <img src="img/icon/money_bag.svg" alt="#">
                         <h4>Miễn phí</h4>
                         <p>Dự án Tourbi được điều hành và hoạt động hoàn toàn miễn phí. Chúng tôi mong muốn đem đến những gợi ý hoàn hảo về địa điểm du lịch cho các bạn</p>
@@ -131,14 +132,14 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <div class="single_donation_item">
+                    <div class="single_donation_item" data-aos="flip-up">
                         <img src="img/icon/money_bag.svg" alt="#">
                         <h4>Công bằng</h4>
                         <p>Bảng xếp hạng của chúng tôi được xây dựng giựa trên đánh giá của các bạn.</p>
                         <a href="about.html" class="read_btn">read more</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6" data-aos="flip-right">
                     <div class="single_donation_item">
                         <img src="img/icon/money_bag.svg" alt="#">
                         <h4>Hướng tới giá trị cộng đồng</h4>
@@ -172,7 +173,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-6" data-aos="flip-left">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-right">
                     <div class="single_popular_place">
                         <img src="img/detail-tourist/Maichau/4.jpg" alt="">
                         <h4>Mai Châu</h4>
@@ -180,7 +181,7 @@
                         <a href="detail-tourist.html" class="btn1">read more</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="flip-left">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up">
                     <div class="single_popular_place">
                         <img src="img/icon/place_icon_2.png" alt="">
                         <h4>Biking in Norway</h4>
@@ -188,7 +189,7 @@
                         <a href="#" class="btn1">read more</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6" data-aos="flip-left">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-left">
                     <div class="single_popular_place">
                         <img src="img/icon/place_icon_3.png" alt="">
                         <h4>Tour of iceland</h4>
@@ -209,7 +210,7 @@
                     <div class="place_detauls_text">
                         <div class="row justify-content-center">
                             <div class="col-lg-8 col-xl-6">
-                                <div class="place_details_content">
+                                <div class="place_details_content" data-aos="zoom-out-right">
                                     <img src="img/section_tittle_img.png" alt="#">
                                     <h2>Amazing tour</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida Risus commodo viverra maecenas accumsan lacus vel facilisis.
@@ -519,9 +520,7 @@
     </footer>
     <!--::footer_part end::-->
 
-    <script>
-        AOS.init();
-    </script>
+    
     <!-- jquery plugins here-->
     <!-- jquery -->
     <script src="js/jquery-1.12.1.min.js"></script>
@@ -549,6 +548,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- my js -->
     <script src="js/index.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
