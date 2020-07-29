@@ -20,6 +20,14 @@
     
 }
 
+.ans_field {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-content: center;
+    position: inherit;
+}
+
 .minh {
     display: block;
     float: right;
@@ -27,18 +35,50 @@
     height: 50%; */
 }
 
+.ans_field2 {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20%;
+}
+
 .optionblock {
     width: 20%;
     display: inline-block;
-    margin-right: 0;
-    float: none;
-    padding: 0 12px;
+    padding-top: 25px;
     vertical-align: top;
-    position: inherit;
+    /* position: inherit; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opt4a {
+    margin: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 36px;
+    height: 36px;
+    
+}
+
+.textlabel {
+    display: block;
+    text-align: center;
+    font-weight: bold;
 }
 
 .opt {
     vertical-align: middle;
+}
+
+label {
+    align-items: center;
+
+}
+
+.img-que {
+    width: 165.225px;
+    height: 165.225px;
 }
 
 .quest_zone {
