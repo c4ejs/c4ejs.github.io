@@ -10154,3 +10154,17 @@ td.day {
     font-size: 19px;
     color: #0c427a;
 }
+
+
+/* Thành thêm code */
+
+.btn-register {
+    border-radius: 10px;
+    width: 70% !important;
+}
+
+.message-error {
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}

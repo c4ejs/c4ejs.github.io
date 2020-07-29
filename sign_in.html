@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -23,7 +24,8 @@
     <!-- swiper CSS -->
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
@@ -70,6 +72,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <!-- <a class="btn_1 d-none d-lg-block" href="sign_in.html">Sign in</a> -->
                     </nav>
                 </div>
             </div>
@@ -78,20 +81,20 @@
 
 
     <div class="login-page">
+        <div class="message-error"></div>
         <div class="form">
             <form class="register-form">
-                <input type="text" placeholder="Username" class="username-register" required>
-                <input type="password" placeholder="Password" class="pass-register" required>
-                <input type="password" placeholder="Retype Password" class="pass-register" required>
-                <input type="email" class="email-register" placeholder="Email">
-                <button>Create</button>
+                <input type="text" placeholder="Username" id="username-register">
+                <input type="password" placeholder="Password" id="pass-register">
+                <input type="email" id="email-register" placeholder="Email">
+                <button class="btn-register" id="btnRegister">Create</button>
                 <p class="message">Already Registered? <a href="#">Login</a> </p>
             </form>
 
             <form class="login-form">
-                <input class="username-login" type="text" placeholder="Username" required>
-                <input class="password-login" type="password" placeholder="Password" required>
-                <button class="btnLogin" type="submit">login</button>
+                <input class="username-login" type="text" placeholder="Username">
+                <input class="password-login" type="password" placeholder="Password">
+                <button id="btnLogin">login</button>
                 <p class="message">Not Registered? <a href="#">Register</a></p>
             </form>
         </div>
